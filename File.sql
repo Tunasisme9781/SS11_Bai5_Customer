@@ -224,6 +224,7 @@ DO $$
     END $$;
 
 COMMIT;
+rollback;
 
 UPDATE bai5.customers
 SET balance = 50000000
